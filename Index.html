@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #message {
+            display: none;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Password to View the Message</h2>
+    <input type="password" id="pass" placeholder="Enter password" />
+    <button onclick="check()">Submit</button>
+    <div id="message">
+        <p>How are you… missing you❤️💖</p>
+    </div>
+
+    <script>
+        function check() {
+            let password = document.getElementById("pass").value;
+            if(password === "DT187") {
+                document.getElementById("message").style.display = "block";
+            } else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</body>
+      </html>
